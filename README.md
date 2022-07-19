@@ -1,1 +1,1 @@
-# NodeJS Template
+# Svelte Template

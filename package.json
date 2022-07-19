@@ -2,7 +2,7 @@
 	"name": "base-js-template",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
+	"private": true,
 	"scripts": {
 		"commit": "git-cz",
 		"prettier:check": "prettier --check .",
@@ -11,8 +11,9 @@
 		"lint": "npm run eslint:check && npm run prettier:check",
 		"lint:fix": "npm run eslint:check && npm run prettier:fix",
 		"prepare": "husky install",
-		"start": "node src/index.js",
-		"dev": "nodemon src/index.js"
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
 	},
 	"config": {
 		"commitizen": {
@@ -39,13 +40,16 @@
 		"@babel/eslint-parser": "^7.18.2",
 		"@babel/plugin-syntax-import-assertions": "^7.17.12",
 		"@commitlint/cli": "^11.0.0",
+		"@sveltejs/vite-plugin-svelte": "^1.0.1",
 		"commitizen": "^4.2.4",
 		"cz-customizable": "^6.3.0",
 		"eslint": "^8.17.0",
 		"husky": "^8.0.0",
 		"lint-staged": "^13.0.0",
-		"nodemon": "^2.0.19",
-		"prettier": "^2.6.2"
+		"prettier": "^2.6.2",
+		"svelte": "^3.49.0",
+		"vite": "^3.0.2",
+		"vite-plugin-html": "^3.2.0"
 	},
 	"type": "module",
 	"repository": {
